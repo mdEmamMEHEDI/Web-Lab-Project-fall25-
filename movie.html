@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Archive Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 400px;
+            margin: 80px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #aaa;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Movie Archive Entry Form</h2>
+
+    <form action="store.php" method="POST">
+
+        Movie Name:
+        <input type="text" name="movie_name" required>
+
+        Movie Type:
+        <input type="text" name="movie_type" required>
+
+        Release Date:
+        <input type="date" name="release_date" required>
+
+        Producer Name:
+        <input type="text" name="producer_name" required>
+
+        Rotten Tomato Rating:
+        <input type="number" step="0.1" name="rating" required>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</div>
+
+</body>
+</html>
